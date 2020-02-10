@@ -78,21 +78,21 @@ perfecthuman_artist = {
     'name': 'Perfect Human',
     'route': '/perfect-human',
     'links': perfecthuman_links,
-    'image': '/images/perfecthuman/perfect-human_image.jpg'
+    'image': '/images/perfect-human/perfect-human_image.jpg'
 }
 
 marblebust_artist = {
     'name': 'Marble Bust',
     'route': '/marble-bust',
     'links': marblebust_links,
-    'image': 'images/marblebust/marble-bust_image.jpg'
+    'image': 'images/marble-bust/marble-bust_image.jpg'
 }
 
 ourv_artist = {
     'name': 'Our.V',
     'route': '/our-v',
     'links': ourv_links,
-    'image': '/images/ourv/our-v_image.jpg',
+    'image': '/images/our-v/our-v_image.jpg',
 }
 
 # Releases
@@ -161,7 +161,7 @@ auk_release = {
     'tracklist': auk_tracklist,
     'links': auk_links,
     'release_date': date(2020, 2, 11),
-    'cover': '/images/auk/a-u-k_cover.png',
+    'cover': '/images/a-u-k/a-u-k_cover.png',
 }
 
 # Events
