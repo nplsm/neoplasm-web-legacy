@@ -1,0 +1,16 @@
+{% extends "base.html.jinja2" %}
+
+{% block title %}Artists — NEOPLASM{% endblock title%}
+
+{% block main %}
+<main class="list">
+
+    {% for artist in artists %}
+        <section>
+            <a href="{{ artist.route }}"><img src="{{ static(artist.image) }}"></a>
+            <a href="{{ artist.route }}"><h2>{{ artist.name }}<h2></a>
+        </section>
+    {% endfor %}
+
+</main>    
+{% endblock main %}

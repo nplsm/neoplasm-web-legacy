@@ -1,0 +1,261 @@
+from datetime import date, timedelta
+from operator import itemgetter
+import markdown2
+
+
+# Links
+
+## Artists' links
+perfecthuman_links = [
+    {'name': 'Facebook', 'href': 'https://www.facebook.com/perfecthumanmusic/'},
+    {'name': 'VK', 'href': 'https://vk.com/perfect.human'},
+    {'name': 'Telegram', 'href': 'https://tele.click/perfect_human'},
+    {'name': 'Bandcamp', 'href': 'http://perfecthuman.bandcamp.com'},
+    {'name': 'Soundcloud', 'href': '#'},
+]
+
+marblebust_links = [
+    {'name': 'Facebook', 'href': 'https://www.facebook.com/marb1ebust'},
+    {'name': 'VK', 'href': 'https://vk.com/marblebust'},
+    {'name': 'Telegram', 'href': 'https://t.me/lovvlife'},
+    {'name': 'Bandcamp', 'href': 'https://lovvlifer.bandcamp.com'},
+    {'name': 'Soundcloud', 'href': 'https://soundcloud.com/djmarblebust'},
+]
+
+ourv_links = [
+    # {'name': 'Facebook', 'href': '#'},
+    {'name': 'VK', 'href': 'https://vk.com/our__v'},
+    # {'name': 'Telegram', 'href': '#'},
+    {'name': 'Bandcamp', 'href': 'https://ourdotv.bandcamp.com'},
+    {'name': 'Soundcloud', 'href': 'https://soundcloud.com/our_v'},
+]
+
+## Releases' links
+omega_links = [
+    # {'name': 'Apple Music', 'href': '#'},
+    # {'name': 'Boom', 'href': '#'},
+    # {'name': 'Spotify', 'href': '#'},
+    # {'name': 'Bandcamp', 'href': '#'},
+    # {'name': 'Soundcloud', 'href': '#'},
+]
+
+lifeoxetine_links = [
+    # {'name': 'Apple Music', 'href': '#'},
+    # {'name': 'Boom', 'href': '#'},
+    # {'name': 'Spotify', 'href': '#'},
+    # {'name': 'Bandcamp', 'href': '#'},
+    # {'name': 'Soundcloud', 'href': '#'},
+]
+
+auk_links = [
+    # {'name': 'Apple Music', 'href': '#'},
+    # {'name': 'Boom', 'href': '#'},
+    # {'name': 'Spotify', 'href': '#'},
+    # {'name': 'Bandcamp', 'href': '#'},
+    # {'name': 'Soundcloud', 'href': '#'},
+]
+
+## Locations' links
+live8_links = [
+    # {'name': 'Facebook', 'href': '#'},
+    # {'name': 'VK', 'href': '#'},
+]
+
+## Events' links
+eartheater2019_links = [
+    # {'name': 'Facebook', 'href': '#'},
+    # {'name': 'VK', 'href': '#'},
+]
+
+hdmirror2020_links = [
+    {'name': 'Resident Adviser', 'href': 'https://www.residentadvisor.net/events/1380297'},
+    {'name': 'Facebook', 'href': 'https://www.facebook.com/events/637503077020666/'},
+    {'name': 'VK', 'href': 'https://vk.com/hdmirrorneoplasm'},
+]
+
+# Artists
+perfecthuman_artist = {
+    'name': 'Perfect Human',
+    'route': '/perfect-human',
+    'links': perfecthuman_links,
+    'image': '/images/perfecthuman/perfect-human_image.jpg'
+}
+
+marblebust_artist = {
+    'name': 'Marble Bust',
+    'route': '/marble-bust',
+    'links': marblebust_links,
+    'image': 'images/marblebust/marble-bust_image.jpg'
+}
+
+ourv_artist = {
+    'name': 'Our.V',
+    'route': '/our-v',
+    'links': ourv_links,
+    'image': '/images/ourv/our-v_image.jpg',
+}
+
+# Releases
+
+## Releases' tracklists
+
+omega_tracklist = [
+    {'name': 'Omega (feat. Marble Bust)',
+     'length': timedelta(minutes=3, seconds=42)},
+]
+
+lifeoxetine_tracklist = [
+    {'name': 'THENEWERA', 'length': timedelta(minutes=3, seconds=4)},
+    {'name': 'TRANSGRESSION (feat. Увула)',
+     'length': timedelta(minutes=2, seconds=20)},
+    {'name': 'ANGELS', 'length': timedelta(minutes=3, seconds=55)},
+    {'name': 'HINDSIGHT', 'featured': 'Sparrow',
+        'length': timedelta(minutes=3, seconds=4)},
+    {'name': 'SORRYAU', 'length': timedelta(minutes=3, seconds=42)},
+    {'name': 'TRANCEGRESSION', 'length': timedelta(minutes=3, seconds=42)},
+    {'name': 'SORRYAU', 'length': timedelta(minutes=2, seconds=33)},
+    {'name': 'THELIFTINGHAND', 'length': timedelta(minutes=6, seconds=31)},
+]
+
+auk_tracklist = [
+    {'name': 'Wait for me here, I\'ll be right there',
+        'length': timedelta(minutes=2, seconds=14)},
+    {'name': 'Backstage', 'length': timedelta(minutes=3, seconds=46)},
+    {'name': 'Ice Cream (feat. Jessie)',
+        'length': timedelta(minutes=3, seconds=9)},
+    {'name': 'League', 'length': timedelta(minutes=1, seconds=57)},
+    {'name': 'Do not leave me', 'length': timedelta(minutes=1, seconds=25)},
+    {'name': 'Justified Misunderstanding',
+        'length': timedelta(minutes=2, seconds=40)},
+    {'name': 'Soft Forms', 'length': timedelta(minutes=4, seconds=5)},
+    {'name': 'Invenire Tentant', 'length': timedelta(minutes=1, seconds=25)},
+    {'name': 'A U 0K& What\'s wrong with you... ',
+        'length': timedelta(minutes=4, seconds=20)},
+]
+
+## Releases
+omega_release = {
+    'name': 'Omega',
+    'route': '/omega',
+    'artist': perfecthuman_artist,
+    'tracklist': omega_tracklist,
+    'links': omega_links,
+    'release_date': date(2019, 9, 10),
+    'cover': '/images/omega/omega_cover.jpeg',
+}
+
+lifeoxetine_release = {
+    'name': 'Lifeoxetine',
+    'route': '/lifeoxetine',
+    'artist': marblebust_artist,
+    'tracklist': lifeoxetine_tracklist,
+    'links': lifeoxetine_links,
+    'release_date': date(2019, 11, 4),
+    'cover': '/images/lifeoxetine/lifeoxetine_cover.jpeg',
+}
+
+auk_release = {
+    'name': 'A U K',
+    'route': '/a-u-k',
+    'artist': ourv_artist,
+    'tracklist': auk_tracklist,
+    'links': auk_links,
+    'release_date': date(2020, 2, 11),
+    'cover': '/images/auk/a-u-k_cover.png',
+}
+
+# Events
+
+## Events' locations
+live8club_location = {
+    'name': 'Live8Club',
+    'city': 'Moscow',
+    'links': live8_links,
+    # 'href': '#',
+}
+
+##Events
+eartheater2019_event = {
+    'name': 'Eartheater x NEOPLASM',
+    'route': '/2019/eartheater',
+    'description_route': '/eartheater_description.md',
+    'date': date(2019, 11, 8),
+    'location': live8club_location,
+    'links': eartheater2019_links,
+    'poster': '/images/eartheater/eartheater_poster.jpg',
+    'lineup': [
+        'Eartheater (USA) Live',
+        'Marble Bust Live',
+        'Lovozero',
+        'Lisa Smirnova',
+        'p3rf x',
+        'ALEXA1312',
+        'Rouborgen',
+    ],
+}
+
+hdmirror2020_event = {
+    'name': 'HDMIRROR x NEOPLASM',
+    'route': '2020/hdmirror',
+    'description_route': '/hdmirror_description.md',
+    'date': date(2020, 2, 29),
+    'tickets_href': 'https://neoplasm.timepad.ru/event/1235549/',
+    'location': live8club_location,
+    'links': hdmirror2020_links,
+    'poster': '/images/hdmirror/hdmirror_poster.jpg',
+    'lineup': [
+        'HDMIRROR (Berlin/Cape Town)',
+        'Our.v',
+        'p3rf x',
+        'ALEXA1312',
+        'ducttape',
+    ],
+}
+
+
+artists_list = [marblebust_artist, perfecthuman_artist, ourv_artist, ]
+releases_list = [lifeoxetine_release, omega_release, auk_release, ]
+events_list = [eartheater2019_event, hdmirror2020_event, ] 
+
+for release in releases_list:
+    route = release['route']
+    release['description'] = markdown2.markdown_path(
+        f'./markdown{route}_description.md')
+
+    tracklist = release['tracklist']
+    total_lenght = timedelta(0)
+
+    for track in tracklist:
+        length = track['length']
+        total_lenght += length
+        minutes = str(length).split(':')[1]
+        seconds = str(length).split(':')[2]
+        track['lenght_string'] = ':'.join([minutes, seconds])
+        minutes_int = int(minutes)
+        seconds_int = int(seconds)
+        track['lenght_string_html'] = f'PTM{str(minutes_int)}S{str(seconds_int)}'
+
+    total_lenght_minutes = str(total_lenght).split(':')[1]
+    total_lenght_seconds = str(total_lenght).split(':')[2]
+    release['total_lenght'] = ':'.join(
+        [total_lenght_minutes, total_lenght_seconds])
+    total_lenght_minutes_int = int(total_lenght_minutes)
+    total_lenght_seconds_int = int(total_lenght_seconds)
+    track['total_lenght_html'] = f'PTM{str(total_lenght_minutes_int)}S{str(total_lenght_seconds_int)}'
+
+for artist in artists_list:
+    route = artist['route']
+    artist['description'] = markdown2.markdown_path(
+        f'./markdown{route}_description.md')
+
+for event in events_list:
+    route = event['description_route']
+    event['description'] = markdown2.markdown_path(
+        f'./markdown{route}')
+
+about = markdown2.markdown_path(
+        f'./markdown/about.md')
+
+artists_list.sort(key=itemgetter('name'))
+releases_list.sort(key=itemgetter('release_date'), reverse=True)
+events_list.sort(key=itemgetter('date'), reverse=True)
