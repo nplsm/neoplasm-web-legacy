@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
+@import url('link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=latin-ext" rel="stylesheet"');
 
 body {
     margin: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 body>div {
-    max-width: 20cm;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ a:hover {
 }
 
 a:active {
-    color: chartreuse;
+    color: #7fff00;
     text-decoration: underline;
 }
 
@@ -68,6 +68,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+    float: left;
 }
 
 .list>div {
@@ -88,8 +90,10 @@ h2 {
 
 
 section {
-    flex: 10;
-    margin: 1rem 1rem;
+    flex: none;
+    position: relative;
+    float: left;
+    margin: 0rem 1rem;
     text-align: left;
 }
 
@@ -123,7 +127,7 @@ ul.social>li, ul.social>h3 {
 img {
     max-width: 350px;
     width: 100%;
-    min-width: 150px;
+    min-width: 350px;
 }
 
 button {
@@ -136,7 +140,8 @@ p {
 
 ol.tracklist {
     list-style: decimal-leading-zero;
-    margin-left: 1%;
+    list-style-position: inside;
+    padding-left: 0;
 }
 
 
@@ -144,13 +149,19 @@ article {
     display: block;
     margin: 0 1rem;
     line-height: 1.5;
-    color: rgba(243, 0, 0, 0.801);
-    font-style: thin;
+    color: rgba(0, 0, 0, 0.801);
+    font-weight: 300;
 }
 
 ol.lineup {
     list-style: none;
     padding: 0;
+}
+
+#location {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 :root {
