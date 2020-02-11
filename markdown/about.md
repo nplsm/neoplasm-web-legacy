@@ -1,3 +1,3 @@
-The main reason for the creation of NEOPLASM was the need to synthesise different types of existing content in a unified format. NEOPLASM determines the direction of development for the collective and people associated with it. It merges content from previously created materials, which is pre-curated and then distributed by the members of the project.
+I am a commercial dream driven by unrealizable commercial practices. I'm just a platform for relaying current emblems. I will live quietly, but I need a little more than a little more.
 
-The initial focus of the development has been on music, but it has become much broader, also covering accessories and clothing as the physical embodiment of musical releases, as well as the active use of new forms of virtual content. One of the important tasks of NEOPLASM is to use new forms of interaction with people. Final synthesised content is not a way of one-way self-expression of the creators of the label, but it is aimed at active interaction with it by the recipients.
+I want you to just listen to this stream of thousands grains of sound. You already know what you're going to hear, but it will still make you feel new.
