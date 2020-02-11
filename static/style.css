@@ -3,10 +3,12 @@
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
+    font-stretch: 80%;
 }
 
 body>div {
     max-width: 24cm;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -21,7 +23,7 @@ a:hover {
 }
 
 a:active {
-    color: chartreuse;
+    color: #7fff00;
     text-decoration: underline;
 }
 
@@ -84,7 +86,7 @@ main {
 
 section {
     flex: 25rem 0 1;
-    margin: 1.5rem 1rem;
+    margin: 0 1rem 3rem;
     text-align: center;
 }
 
@@ -118,6 +120,7 @@ img {
     max-width: 25rem;
     width: 100%;
     min-width: 150px;
+    margin-top: 1rem;
 }
 
 button {
@@ -136,11 +139,20 @@ ol.tracklist {
 article {
     display: block;
     margin: 0 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.801);
+    font-weight: 300;
 }
 
 ol.lineup {
     list-style: none;
     padding: 0;
+}
+
+#location {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 :root {

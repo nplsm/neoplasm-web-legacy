@@ -11,7 +11,7 @@ perfecthuman_links = [
     {'name': 'VK', 'href': 'https://vk.com/perfect.human'},
     {'name': 'Telegram', 'href': 'https://tele.click/perfect_human'},
     {'name': 'Bandcamp', 'href': 'http://perfecthuman.bandcamp.com'},
-    {'name': 'Soundcloud', 'href': '#'},
+    # {'name': 'Soundcloud', 'href': '#'},
 ]
 
 marblebust_links = [
@@ -32,11 +32,11 @@ ourv_links = [
 
 ## Releases' links
 omega_links = [
-    # {'name': 'Apple Music', 'href': '#'},
-    # {'name': 'Boom', 'href': '#'},
-    # {'name': 'Spotify', 'href': '#'},
-    # {'name': 'Bandcamp', 'href': '#'},
-    # {'name': 'Soundcloud', 'href': '#'},
+    {'name': 'Apple Music', 'href': 'https://music.apple.com/us/album/omega-feat-marble-bust-single/1497301767'},
+    {'name': 'Boom', 'href': 'https://vk.cc/ajbQyb'},
+    {'name': 'Spotify', 'href': 'https://open.spotify.com/album/11IfzV6wZxLslVsq2uh4gk?si=CXAho1f4QNCspqS22ZLguQ'},
+    {'name': 'Bandcamp', 'href': 'https://perfecthuman.bandcamp.com/track/omega'},
+    {'name': 'Soundcloud', 'href': 'https://soundcloud.com/ne-sm/omega'},
 ]
 
 lifeoxetine_links = [
@@ -48,17 +48,17 @@ lifeoxetine_links = [
 ]
 
 auk_links = [
-    # {'name': 'Apple Music', 'href': '#'},
-    # {'name': 'Boom', 'href': '#'},
+    {'name': 'Apple Music', 'href': 'https://music.apple.com/ru/album/a-u-k/1498059256?l=en'},
+    {'name': 'Boom', 'href': 'https://vk.cc/akEskF'},
     # {'name': 'Spotify', 'href': '#'},
-    # {'name': 'Bandcamp', 'href': '#'},
-    # {'name': 'Soundcloud', 'href': '#'},
+    {'name': 'Bandcamp', 'href': 'https://ourdotv.bandcamp.com/album/a-u-k'},
+    {'name': 'Soundcloud', 'href': 'https://soundcloud.com/ne-sm/sets/a-u-k'},
 ]
 
 ## Locations' links
 live8_links = [
-    # {'name': 'Facebook', 'href': '#'},
-    # {'name': 'VK', 'href': '#'},
+    {'name': 'Facebook', 'href': 'https://www.facebook.com/live8club/'},
+    {'name': 'VK', 'href': 'https://vk.com/live8club'},
 ]
 
 ## Events' links
@@ -178,8 +178,11 @@ live8club_location = {
 eartheater2019_event = {
     'name': 'Eartheater x NEOPLASM',
     'route': '/2019/eartheater',
+    'soldout': True,
+    'past': True,
     'description_route': '/eartheater_description.md',
     'date': date(2019, 11, 8),
+    'tickets_href': 'https://neoplasm.timepad.ru/event/1096795/',
     'location': live8club_location,
     'links': eartheater2019_links,
     'poster': '/images/eartheater/eartheater_poster.jpg',
@@ -197,6 +200,8 @@ eartheater2019_event = {
 hdmirror2020_event = {
     'name': 'HDMIRROR x NEOPLASM',
     'route': '2020/hdmirror',
+    'soldout': False,
+    'past': False,
     'description_route': '/hdmirror_description.md',
     'date': date(2020, 2, 29),
     'tickets_href': 'https://neoplasm.timepad.ru/event/1235549/',
