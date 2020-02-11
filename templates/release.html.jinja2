@@ -17,14 +17,7 @@
                     <li><a href="{{ link.href }}" target="_blank">{{ link.name }}</a></li>
                 {% endfor %}
             </ul>
-             <ol class="tracklist">
-                 {% for track in tracklist %}
-                 <li><span>{{ track.name }} </span><time datetime="{{ track.lenght_string_html }}">{{ track.lenght_string }}</time></li>
-                 {% endfor %}
-                 {% if tracklist|count > 1 %}
-                    <p>Total Lenght: <time datetime="{{ total_lenght_html }}">{{ total_lenght }}</time></p>
-                 {% endif %}
-             </ol>
+
         </div>
        
 
@@ -35,6 +28,15 @@
         <p>released on <time datetime="{{ release_date.strftime('%Y-%m-%d') }}">{{ release_date.strftime('%Y-%m-%d') }}</time>
         <br>© All right reserved</p>
     </article>
+
+    <ol class="tracklist">
+        {% for track in tracklist %}
+        <li><span>{{ track.name }} </span><time datetime="{{ track.lenght_string_html }}">{{ track.lenght_string }}</time></li>
+        {% endfor %}
+        {% if tracklist|count > 1 %}
+        <p>Total Lenght: <time datetime="{{ total_lenght_html }}">{{ total_lenght }}</time></p>
+        {% endif %}
+    </ol>
     
 
 

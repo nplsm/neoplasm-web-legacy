@@ -17,8 +17,11 @@
                     <li>{{ artist}}</li>
                 {% endfor %}
             </ol>
-
+            {% if past == false and soldout == false%}
             <h2><a href="{{ tickets_href }}" target="_blank">Buy Tickets...</a></h2>
+            {% elif past == false and soldout == true %}
+            <h2><a href="{{ tickets_href }}" target="_blank">Sold out.</a></h2>
+            {% endif %}
 
             <ul class="social">
                 {% for link in links %}

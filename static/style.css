@@ -1,4 +1,4 @@
-@import url('link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=latin-ext" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
 
 body {
     margin: 0;
@@ -7,7 +7,8 @@ body {
 }
 
 body>div {
-    max-width: 95%;
+    max-width: 24cm;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -60,23 +61,17 @@ main {
     padding: 0;
 }
 
-h2 {
-    margin-top: 0;
-}
-
 .list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
-    float: left;
 }
 
 .list>div {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
-    max-width: 350px;
+    max-width: 25rem;
 }
 
 .flex {
@@ -86,15 +81,13 @@ h2 {
 
 .flex>div {
     margin: 0 1rem;
+    max-width: 25rem;
 }
 
-
 section {
-    flex: none;
-    position: relative;
-    float: left;
-    margin: 0rem 1rem;
-    text-align: left;
+    flex: 25rem 0 1;
+    margin: 0 1rem 3rem;
+    text-align: center;
 }
 
 h1 {
@@ -123,11 +116,11 @@ ul.social>li, ul.social>h3 {
     margin-right: 1rem;
 }
 
-
 img {
-    max-width: 350px;
+    max-width: 25rem;
     width: 100%;
-    min-width: 350px;
+    min-width: 150px;
+    margin-top: 1rem;
 }
 
 button {
@@ -140,8 +133,6 @@ p {
 
 ol.tracklist {
     list-style: decimal-leading-zero;
-    list-style-position: inside;
-    padding-left: 0;
 }
 
 
@@ -169,12 +160,12 @@ ol.lineup {
 }
 
 .swiper-container {
-    max-width: 350px;
+    max-width: 25rem;
     margin: 1rem;
 }
 
 .swiper-slide>img {
-    max-width: 350px;
+    max-width: 25rem;
     box-shadow: black;
 }
 

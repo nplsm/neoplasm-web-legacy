@@ -11,7 +11,7 @@ perfecthuman_links = [
     {'name': 'VK', 'href': 'https://vk.com/perfect.human'},
     {'name': 'Telegram', 'href': 'https://tele.click/perfect_human'},
     {'name': 'Bandcamp', 'href': 'http://perfecthuman.bandcamp.com'},
-    {'name': 'Soundcloud', 'href': '#'},
+    # {'name': 'Soundcloud', 'href': '#'},
 ]
 
 marblebust_links = [
@@ -178,6 +178,8 @@ live8club_location = {
 eartheater2019_event = {
     'name': 'Eartheater x NEOPLASM',
     'route': '/2019/eartheater',
+    'soldout': True,
+    'past': True,
     'description_route': '/eartheater_description.md',
     'date': date(2019, 11, 8),
     'tickets_href': 'https://neoplasm.timepad.ru/event/1096795/',
@@ -198,6 +200,8 @@ eartheater2019_event = {
 hdmirror2020_event = {
     'name': 'HDMIRROR x NEOPLASM',
     'route': '2020/hdmirror',
+    'soldout': False,
+    'past': False,
     'description_route': '/hdmirror_description.md',
     'date': date(2020, 2, 29),
     'tickets_href': 'https://neoplasm.timepad.ru/event/1235549/',
