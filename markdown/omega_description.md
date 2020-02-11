@@ -1,1 +1,2 @@
-The collaboration between Perfect Human and Marble Blast. The first work to appear on Neoplasm.
+Hello. This is my first appearance. 
+I’m grateful to people who helped me to come into this world.

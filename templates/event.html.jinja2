@@ -10,7 +10,7 @@
         <div><img src="{{ static(poster) }}"></div>
 
         <div>
-            <h2><time datetime="{{ date.strftime('%Y-%m-%d') }}">{{ date.strftime('%d %b %Y') }}<time><br>{{ name }}<br><a id="location" href="{{ location.href }}">@{{ location.name }} ({{ location.city }})</a></h2>
+            <h2><time datetime="{{ date.strftime('%Y-%m-%d') }}">{{ date.strftime('%d %b %Y') }}<time><br>{{ name }}<br><a id="location" href="{{ location.href }}" target="_blank">@{{ location.name }} ({{ location.city }})</a></h2>
 
             <ol class="lineup">
                 {% for artist in lineup %}

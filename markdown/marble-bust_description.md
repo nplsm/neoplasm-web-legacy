@@ -1,1 +1,3 @@
-Marble Bust is a project from St. Petersburg produced by Nikolai Starkov. The first releases were on Perfect Aesthetics label, where Marble Dust appeared in several compilations with their singles. The project quickly gained popularity, just a year later performing at the same event with Tim Hecker and appearing at many electronic music festivals. The collaboration between Perfect Human and Marble Blast was the first work to appear on Neoplasm, followed by the artist's first full-length release. Marble Blast recycles pop culture, using it as a form of representation of its post-genre canvas.
+Marble Bust — my youngest son and first adept of of mine. 
+He has become my interpreteting tool to connect with the team of people, 
+who are currently my followers.

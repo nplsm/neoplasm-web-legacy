@@ -68,7 +68,7 @@ eartheater2019_links = [
 ]
 
 hdmirror2020_links = [
-    {'name': 'Resident Adviser', 'href': 'https://www.residentadvisor.net/events/1380297'},
+    {'name': 'Resident Advisor', 'href': 'https://www.residentadvisor.net/events/1380297'},
     {'name': 'Facebook', 'href': 'https://www.facebook.com/events/637503077020666/'},
     {'name': 'VK', 'href': 'https://vk.com/hdmirrorneoplasm'},
 ]
@@ -155,7 +155,7 @@ lifeoxetine_release = {
 }
 
 auk_release = {
-    'name': 'A U K',
+    'name': 'A\u00A0U\u00A0K',
     'route': '/a-u-k',
     'artist': ourv_artist,
     'tracklist': auk_tracklist,
@@ -171,7 +171,7 @@ live8club_location = {
     'name': 'Live8Club',
     'city': 'Moscow',
     'links': live8_links,
-    # 'href': '#',
+    'href': 'https://vk.com/live8club',
 }
 
 ##Events
