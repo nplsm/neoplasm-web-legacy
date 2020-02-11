@@ -161,7 +161,7 @@ auk_release = {
     'tracklist': auk_tracklist,
     'links': auk_links,
     'release_date': date(2020, 2, 11),
-    'cover': '/images/a-u-k/a-u-k_cover.png',
+    'cover': '/images/a-u-k/a-u-k_cover.jpg',
 }
 
 # Events
