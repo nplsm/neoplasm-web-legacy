@@ -133,6 +133,9 @@ p {
 
 ol.tracklist {
     list-style: decimal-leading-zero;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 1rem;
 }
 
 
