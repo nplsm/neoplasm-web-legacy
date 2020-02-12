@@ -13,6 +13,7 @@ aiohttp = "*"
 aiohttp-jinja2 = "*"
 markdown2 = "*"
 gunicorn = "*"
+aioredis = "*"
 
 [requires]
 python_version = "3.8"

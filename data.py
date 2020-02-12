@@ -265,7 +265,7 @@ for event in events_list:
     event['description'] = markdown2.markdown_path(
         f'./markdown/{route}_description.md')
 
-about = markdown2.markdown_path(f'./markdown/about.md')
+about_text = markdown2.markdown_path(f'./markdown/about.md')
 
 artists_list.sort(key=itemgetter('name'))
 releases_list.sort(key=itemgetter('release_date'), reverse=True)

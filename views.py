@@ -1,14 +1,18 @@
 import aiohttp_jinja2
 from aiohttp import web
 
-from data import artists_list, releases_list, events_list, about
+from data import artists_list, releases_list, events_list, about_text
 
-async def index(request):
-    raise web.HTTPFound('/artists')
+def redirect(router, route_name):
+    location = router[route_name].url_for()
+    return web.HTTPFound(location)
+
+async def index_view(request):
+    raise redirect(request.app.router, 'artists')
 
 @aiohttp_jinja2.template('about.html.jinja2')
 async def about_view(request):
-    return {'about': about}
+    return {'about': about_text}
 
 @aiohttp_jinja2.template('artists.html.jinja2')
 async def artists_view(request):
@@ -21,7 +25,7 @@ async def artist_view(request):
     for artist in artists_list:
         if route == artist['route']:
             return artist
-    raise web.HTTPFound('/artists')
+    raise redirect(request.app.router, 'artists')
 
 
 @aiohttp_jinja2.template('releases.html.jinja2')
@@ -35,7 +39,7 @@ async def release_view(request):
     for release in releases_list:
         if route == release['route']:
             return release
-    raise web.HTTPFound('/releases')
+    raise redirect(request.app.router, 'releases')
 
 
 @aiohttp_jinja2.template('events.html.jinja2')
@@ -49,4 +53,4 @@ async def event_view(request):
     for event in events_list:
         if route == event['route']:
             return event
-    raise web.HTTPFound('/events')
+    raise redirect(request.app.router, 'events')
