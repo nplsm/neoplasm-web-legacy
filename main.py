@@ -11,7 +11,6 @@ THIS_DIR = Path(__file__).parent
 
 async def create_app():
     app = web.Application()
-    app.update(static_root_url=str('static'))
 
     jinja2_loader = jinja2.FileSystemLoader(str(THIS_DIR / 'templates'))
     aiohttp_jinja2.setup(app, loader=jinja2_loader)
