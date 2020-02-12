@@ -7,8 +7,8 @@
 
     {% for event in events %}
         <section>
-            <a href="{{ event.route }}"><img src="{{ static(event.poster) }}"></a>
-            <a href="{{ event.route }}"><h2>{{ event.name }}<br><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d %b %Y') }}</time><h2></a>
+            <a href="events/{{ event.route }}"><img src="{{ static(event.poster) }}"></a>
+            <a href="events/{{ event.route }}"><h2>{{ event.name }}<br><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d %b %Y') }}</time><h2></a>
         </section>
     {% endfor %}
 
