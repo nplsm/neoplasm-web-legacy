@@ -37,6 +37,11 @@ omega_links = [
     {'name': 'Spotify', 'href': 'https://open.spotify.com/album/11IfzV6wZxLslVsq2uh4gk?si=CXAho1f4QNCspqS22ZLguQ'},
     {'name': 'Bandcamp', 'href': 'https://perfecthuman.bandcamp.com/track/omega'},
     {'name': 'Soundcloud', 'href': 'https://soundcloud.com/ne-sm/omega'},
+    {'name': 'Deezer', 'href': 'https://www.deezer.com/us/album/129654552'},
+    {'name': 'YouTube Music', 'href': 'https://music.youtube.com/playlist?list=OLAK5uy_nUO6DeeL51H6bl7P-HiIPoGOfsjYHfM5E'},
+    {'name': 'Yandex Music', 'href': 'https://music.yandex.ru/artist/6740953'},
+    {'name': 'Pandora', 'href': 'https://pandora.app.link/mkJ9E1SEZ3'},
+    {'name': 'Google Play', 'href': 'https://play.google.com/store/music/album/Perfect_Human_Feat_Marble_Bust_Omega?id=Bowi6dy74doa3ghw3gqb225dlci'},
 ]
 
 lifeoxetine_links = [
@@ -53,6 +58,11 @@ auk_links = [
     # {'name': 'Spotify', 'href': '#'},
     {'name': 'Bandcamp', 'href': 'https://ourdotv.bandcamp.com/album/a-u-k'},
     {'name': 'Soundcloud', 'href': 'https://soundcloud.com/ne-sm/sets/a-u-k'},
+    {'name': 'Deezer', 'href': 'https://www.deezer.com/us/album/130533372'},
+    # {'name': 'YouTube Music', 'href': ''},
+    {'name': 'Yandex Music', 'href': 'https://music.yandex.ru/artist/5480823'},
+    # {'name': 'Pandora', 'href': ''},
+    {'name': 'Google Play', 'href': 'https://play.google.com/store/music/album/Our_v_A_U_K?id=Bllz54kie7ybyr5vodvomcwumy4'},
 ]
 
 ## Locations' links
