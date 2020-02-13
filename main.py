@@ -6,7 +6,7 @@ from aiohttp import web
 
 from routes import setup_routes
 
-THIS_DIR = Path(__file__).parent]
+THIS_DIR = Path(__file__).parent
 
 async def create_app():
     app = web.Application()
