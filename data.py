@@ -59,9 +59,9 @@ auk_links = [
     {'name': 'Bandcamp', 'href': 'https://ourdotv.bandcamp.com/album/a-u-k'},
     {'name': 'Soundcloud', 'href': 'https://soundcloud.com/ne-sm/sets/a-u-k'},
     {'name': 'Deezer', 'href': 'https://www.deezer.com/us/album/130533372'},
-    # {'name': 'YouTube Music', 'href': ''},
+    {'name': 'YouTube Music', 'href': 'https://music.youtube.com/playlist?list=OLAK5uy_mgIGKIVrDsWftvskU91wFmsaGRfzQP29Y'},
     {'name': 'Yandex Music', 'href': 'https://music.yandex.ru/artist/5480823'},
-    # {'name': 'Pandora', 'href': ''},
+    {'name': 'Pandora', 'href': ' https://pandora.app.link/v6fWY8ZA23'},
     {'name': 'Google Play', 'href': 'https://play.google.com/store/music/album/Our_v_A_U_K?id=Bllz54kie7ybyr5vodvomcwumy4'},
 ]
 
