@@ -186,14 +186,14 @@ live8club_location = {
 # Events
 eartheater2019_event = {
     'name': 'Eartheater x NEOPLASM',
-    'route': 'eartheater2019',
+    'route': 'eartheater-2019',
     'soldout': True,
     'past': True,
     'date': date(2019, 11, 8),
     'tickets_href': 'https://neoplasm.timepad.ru/event/1096795/',
     'location': live8club_location,
     'links': eartheater2019_links,
-    'poster': '/images/eartheater2019/eartheater2019_poster.jpg',
+    'poster': '/images/eartheater-2019/eartheater-2019_poster.jpg',
     'lineup': [
         'Eartheater (USA) Live',
         'Marble Bust Live',
@@ -207,14 +207,14 @@ eartheater2019_event = {
 
 hdmirror2020_event = {
     'name': 'HDMIRROR x NEOPLASM',
-    'route': 'hdmirror2020',
+    'route': 'hdmirror-2020',
     'soldout': False,
     'past': False,
     'date': date(2020, 2, 29),
     'tickets_href': 'https://neoplasm.timepad.ru/event/1235549/',
     'location': live8club_location,
     'links': hdmirror2020_links,
-    'poster': '/images/hdmirror2020/hdmirror2020_poster.jpg',
+    'poster': '/images/hdmirror-2020/hdmirror-2020_poster.jpg',
     'lineup': [
         'HDMIRROR (Berlin/Cape Town)',
         'Our.v',
