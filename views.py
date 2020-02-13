@@ -1,66 +1,56 @@
 import aiohttp_jinja2
 from aiohttp import web
 
-from data import *
+from data import artists_list, releases_list, events_list, about_text
 
+def redirect(router, route_name):
+    location = router[route_name].url_for()
+    return web.HTTPFound(location)
 
-# Artists
+async def index_view(request):
+    raise redirect(request.app.router, 'artists')
+
+@aiohttp_jinja2.template('about.html.jinja2')
+async def about_view(request):
+    return {'about': about_text}
+
 @aiohttp_jinja2.template('artists.html.jinja2')
 async def artists_view(request):
     return {'artists': artists_list}
 
 
 @aiohttp_jinja2.template('artist.html.jinja2')
-async def perfecthuman_view(request):
-    return perfecthuman_artist
+async def artist_view(request):
+    route = request.match_info.get('route')
+    for artist in artists_list:
+        if route == artist['route']:
+            return artist
+    raise redirect(request.app.router, 'artists')
 
 
-@aiohttp_jinja2.template('artist.html.jinja2')
-async def marblebust_view(request):
-    return marblebust_artist
-
-
-@aiohttp_jinja2.template('artist.html.jinja2')
-async def ourv_view(request):
-    return ourv_artist
-
-
-# Releases
 @aiohttp_jinja2.template('releases.html.jinja2')
 async def releases_view(request):
     return {'releases': releases_list}
 
 
 @aiohttp_jinja2.template('release.html.jinja2')
-async def omega_view(requst):
-    return omega_release
+async def release_view(request):
+    route = request.match_info.get('route')
+    for release in releases_list:
+        if route == release['route']:
+            return release
+    raise redirect(request.app.router, 'releases')
 
-
-@aiohttp_jinja2.template('release.html.jinja2')
-async def lifeoxetine_view(request):
-    return lifeoxetine_release
-
-
-@aiohttp_jinja2.template('release.html.jinja2')
-async def auk_view(request):
-    return auk_release
-
-#Events
 
 @aiohttp_jinja2.template('events.html.jinja2')
 async def events_view(request):
     return {'events': events_list}
 
-@aiohttp_jinja2.template('event.html.jinja2')
-async def eartheater2019_view(request):
-    return eartheater2019_event
 
 @aiohttp_jinja2.template('event.html.jinja2')
-async def hdmirror2020_view(request):
-    return hdmirror2020_event
-
-#About
-
-@aiohttp_jinja2.template('about.html.jinja2')
-async def about_view(request):
-    return {'about': about}
+async def event_view(request):
+    route = request.match_info.get('route')
+    for event in events_list:
+        if route == event['route']:
+            return event
+    raise redirect(request.app.router, 'events')

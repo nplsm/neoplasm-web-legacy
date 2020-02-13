@@ -7,8 +7,8 @@
 
     {% for artist in artists %}
         <section>
-            <a href="{{ artist.route }}"><img src="{{ static(artist.image) }}"></a>
-            <a href="{{ artist.route }}"><h2>{{ artist.name }}<h2></a>
+            <a href="artists/{{ artist.route }}"><img src="{{ static(artist.image) }}"></a>
+            <a href="artists/{{ artist.route }}"><h2>{{ artist.name }}<h2></a>
         </section>
     {% endfor %}
 

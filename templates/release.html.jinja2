@@ -10,7 +10,7 @@
         <div><img src="{{ static(cover) }}"></div>
 
         <div>
-            <h2><a href="{{ artist.route }}">{{ artist.name }}</a> — {{ name }} </h2>
+            <h2><a href="/artists/{{ artist.route }}">{{ artist.name }}</a> — {{ name }} </h2>
             
             <ul class="streaming">
                 {% for link in links %}

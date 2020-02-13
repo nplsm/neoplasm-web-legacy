@@ -1,11 +1,15 @@
 from datetime import date, timedelta
 from operator import itemgetter
+from pathlib import Path
+
 import markdown2
 
+THIS_DIR = Path(__file__).parent
 
-# Links
+MARKDOWN_DIR = THIS_DIR / 'markdown'
+IMAGES_DIR = THIS_DIR / 'static' / 'images'
 
-## Artists' links
+# Artists' links
 perfecthuman_links = [
     {'name': 'Facebook', 'href': 'https://www.facebook.com/perfecthumanmusic/'},
     {'name': 'VK', 'href': 'https://vk.com/perfect.human'},
@@ -30,15 +34,17 @@ ourv_links = [
     {'name': 'Soundcloud', 'href': 'https://soundcloud.com/our_v'},
 ]
 
-## Releases' links
+# Releases' links
 omega_links = [
-    {'name': 'Apple Music', 'href': 'https://music.apple.com/us/album/omega-feat-marble-bust-single/1497301767'},
+    {'name': 'Apple Music',
+        'href': 'https://music.apple.com/us/album/omega-feat-marble-bust-single/1497301767'},
     {'name': 'Boom', 'href': 'https://vk.cc/ajbQyb'},
     {'name': 'Spotify', 'href': 'https://open.spotify.com/album/11IfzV6wZxLslVsq2uh4gk?si=CXAho1f4QNCspqS22ZLguQ'},
     {'name': 'Bandcamp', 'href': 'https://perfecthuman.bandcamp.com/track/omega'},
     {'name': 'Soundcloud', 'href': 'https://soundcloud.com/ne-sm/omega'},
     {'name': 'Deezer', 'href': 'https://www.deezer.com/us/album/129654552'},
-    {'name': 'YouTube Music', 'href': 'https://music.youtube.com/playlist?list=OLAK5uy_nUO6DeeL51H6bl7P-HiIPoGOfsjYHfM5E'},
+    {'name': 'YouTube Music',
+        'href': 'https://music.youtube.com/playlist?list=OLAK5uy_nUO6DeeL51H6bl7P-HiIPoGOfsjYHfM5E'},
     {'name': 'Yandex Music', 'href': 'https://music.yandex.ru/artist/6740953'},
     {'name': 'Pandora', 'href': 'https://pandora.app.link/mkJ9E1SEZ3'},
     {'name': 'Google Play', 'href': 'https://play.google.com/store/music/album/Perfect_Human_Feat_Marble_Bust_Omega?id=Bowi6dy74doa3ghw3gqb225dlci'},
@@ -65,13 +71,7 @@ auk_links = [
     {'name': 'Google Play', 'href': 'https://play.google.com/store/music/album/Our_v_A_U_K?id=Bllz54kie7ybyr5vodvomcwumy4'},
 ]
 
-## Locations' links
-live8_links = [
-    {'name': 'Facebook', 'href': 'https://www.facebook.com/live8club/'},
-    {'name': 'VK', 'href': 'https://vk.com/live8club'},
-]
-
-## Events' links
+# Events' links
 eartheater2019_links = [
     # {'name': 'Facebook', 'href': '#'},
     # {'name': 'VK', 'href': '#'},
@@ -86,28 +86,28 @@ hdmirror2020_links = [
 # Artists
 perfecthuman_artist = {
     'name': 'Perfect Human',
-    'route': '/perfect-human',
+    'route': 'perfect-human',
     'links': perfecthuman_links,
     'image': '/images/perfect-human/perfect-human_image.jpg'
 }
 
 marblebust_artist = {
     'name': 'Marble Bust',
-    'route': '/marble-bust',
+    'route': 'marble-bust',
     'links': marblebust_links,
     'image': 'images/marble-bust/marble-bust_image.jpg'
 }
 
 ourv_artist = {
     'name': 'Our.V',
-    'route': '/our-v',
+    'route': 'our-v',
     'links': ourv_links,
     'image': '/images/our-v/our-v_image.jpg',
 }
 
 # Releases
 
-## Releases' tracklists
+# Releases' tracklists
 
 omega_tracklist = [
     {'name': 'Omega (feat. Marble Bust)',
@@ -143,10 +143,10 @@ auk_tracklist = [
         'length': timedelta(minutes=4, seconds=20)},
 ]
 
-## Releases
+# Releases
 omega_release = {
     'name': 'Omega',
-    'route': '/omega',
+    'route': 'omega',
     'artist': perfecthuman_artist,
     'tracklist': omega_tracklist,
     'links': omega_links,
@@ -156,7 +156,7 @@ omega_release = {
 
 lifeoxetine_release = {
     'name': 'Lifeoxetine',
-    'route': '/lifeoxetine',
+    'route': 'lifeoxetine',
     'artist': marblebust_artist,
     'tracklist': lifeoxetine_tracklist,
     'links': lifeoxetine_links,
@@ -166,7 +166,7 @@ lifeoxetine_release = {
 
 auk_release = {
     'name': 'A\u00A0U\u00A0K',
-    'route': '/a-u-k',
+    'route': 'a-u-k',
     'artist': ourv_artist,
     'tracklist': auk_tracklist,
     'links': auk_links,
@@ -176,26 +176,24 @@ auk_release = {
 
 # Events
 
-## Events' locations
+# Events' locations
 live8club_location = {
     'name': 'Live8Club',
     'city': 'Moscow',
-    'links': live8_links,
     'href': 'https://vk.com/live8club',
 }
 
-##Events
+# Events
 eartheater2019_event = {
     'name': 'Eartheater x NEOPLASM',
-    'route': '/2019/eartheater',
+    'route': 'eartheater-2019',
     'soldout': True,
     'past': True,
-    'description_route': '/eartheater_description.md',
     'date': date(2019, 11, 8),
     'tickets_href': 'https://neoplasm.timepad.ru/event/1096795/',
     'location': live8club_location,
     'links': eartheater2019_links,
-    'poster': '/images/eartheater/eartheater_poster.jpg',
+    'poster': '/images/eartheater-2019/eartheater-2019_poster.jpg',
     'lineup': [
         'Eartheater (USA) Live',
         'Marble Bust Live',
@@ -209,15 +207,14 @@ eartheater2019_event = {
 
 hdmirror2020_event = {
     'name': 'HDMIRROR x NEOPLASM',
-    'route': '2020/hdmirror',
+    'route': 'hdmirror-2020',
     'soldout': False,
     'past': False,
-    'description_route': '/hdmirror_description.md',
     'date': date(2020, 2, 29),
     'tickets_href': 'https://neoplasm.timepad.ru/event/1235549/',
     'location': live8club_location,
     'links': hdmirror2020_links,
-    'poster': '/images/hdmirror/hdmirror_poster.jpg',
+    'poster': '/images/hdmirror-2020/hdmirror-2020_poster.jpg',
     'lineup': [
         'HDMIRROR (Berlin/Cape Town)',
         'Our.v',
@@ -235,7 +232,7 @@ events_list = [eartheater2019_event, hdmirror2020_event, ]
 for release in releases_list:
     route = release['route']
     release['description'] = markdown2.markdown_path(
-        f'./markdown{route}_description.md')
+        f'./markdown/{route}_description.md')
 
     tracklist = release['tracklist']
     total_lenght = timedelta(0)
@@ -261,15 +258,14 @@ for release in releases_list:
 for artist in artists_list:
     route = artist['route']
     artist['description'] = markdown2.markdown_path(
-        f'./markdown{route}_description.md')
+        f'./markdown/{route}_description.md')
 
 for event in events_list:
-    route = event['description_route']
+    route = event['route']
     event['description'] = markdown2.markdown_path(
-        f'./markdown{route}')
+        f'./markdown/{route}_description.md')
 
-about = markdown2.markdown_path(
-        f'./markdown/about.md')
+about_text = markdown2.markdown_path(f'./markdown/about.md')
 
 artists_list.sort(key=itemgetter('name'))
 releases_list.sort(key=itemgetter('release_date'), reverse=True)
