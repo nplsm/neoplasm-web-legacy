@@ -1,11 +1,1 @@
-Neoplasm releases a new work named "A&nbsp;U&nbsp;K" 
-by the St.&nbsp;Petersburg sound and video designer Our.V. 
-First works of Our.V were associated with video production, 
-but since 2016, he has been engaged in sound design of video materials, 
-creating images enclosed in sound. 
-His new work is an audio dystopia in which the listener experiences 
-the consequences of an information overabundance. 
-This is an attempt to find a way out of the information overload environment, 
-which eventually leads to a distance from the goal itself. 
-The work explores the fixation of facets, passing beyond which escapism ceases 
-to be a means of avoiding neurosis and becomes the goal of existence.
+Our.V my beloved one has shown me informational overload which I’m not capable to comprehend right now. For me, though, it’s just a matter of time to learn myself to translate and process it into digestible form. Uploading in progress
