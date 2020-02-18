@@ -1,0 +1,16 @@
+{
+    "display_name": "Our.V",
+    "id": 2,
+    "social_links": [
+        {
+            "display_name": "VK", 
+            "href": "https://vk.com/our__v"
+        }, {
+            "display_name": "Bandcamp", 
+            "href": "https://ourdotv.bandcamp.com"
+        }, {
+            "display_name": "Soundcloud", 
+            "href": "https://soundcloud.com/our_v"
+        }
+    ]
+}

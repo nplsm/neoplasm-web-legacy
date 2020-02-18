@@ -1,0 +1,33 @@
+{
+    "display_name": "HDMIRROR x NEOPLASM",
+    "date": "2020-02-29",
+    "past": false,
+    "soldout": false,
+    "tickets_href": "https://neoplasm.timepad.ru/event/1235549/",
+    "location": {
+        "display_name": "Live8Club",
+        "city": "Moscow",
+        "href": "https://vk.com/live8club"
+    },
+    "lineup": [
+        "HDMIRROR (Berlin/Cape Town)",
+        "Our.v",
+        "p3rf x",
+        "ALEXA1312",
+        "ducttape"
+    ],
+    "links": [
+        {
+            "name": "Resident Advisor",
+            "href": "https://www.residentadvisor.net/events/1380297"
+        },
+        {
+            "name": "Facebook",
+            "href": "https://www.facebook.com/events/637503077020666/"
+        },
+        {
+            "name": "VK",
+            "href": "https://vk.com/hdmirrorneoplasm"
+        }
+    ]
+}

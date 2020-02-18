@@ -6,8 +6,12 @@
 <main class="list">
     {% for release in releases %}
         <section>
-            <a href="releases/{{ release.route }}"><img src="{{ static(release.cover) }}"></a>
-            <a href="releases/{{ release.route }}"><h2>{{ release.artist.name }} — {{ release.name }}<h2></a>
+            <a href="releases/{{ release.link }}">
+                <img src="{{ release.image_path }}">
+            </a>
+            <a href="releases/{{ release.link }}">
+                <h2>{{ release.artist.display_name }} — {{ release.display_name }}<h2>
+            </a>
         </section>
     {% endfor %}
 </main>

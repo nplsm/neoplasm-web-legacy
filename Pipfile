@@ -14,6 +14,11 @@ aiohttp-jinja2 = "*"
 markdown2 = "*"
 gunicorn = "*"
 aioredis = "*"
+cchardet = "*"
+aiodns = "*"
+brotlipy = "*"
+uvloop = "*"
+ujson = "*"
 
 [requires]
 python_version = "3.8"

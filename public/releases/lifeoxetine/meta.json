@@ -1,0 +1,49 @@
+{
+    "display_name": "Lifeoxetine",
+    "id": 2,
+    "artist": "marble-bust",
+    "date": "2019-11-04",
+    "tracklist": [
+        {
+            "display_name": "THENEWERA",
+            "length": "03:04"
+        },
+        {
+            "display_name": "TRANSGRESSION",
+            "featuring": {
+                "display_name": "Увула",
+                "href": ""
+            },
+            "length": "02:20"
+        },
+        {
+            "display_name": "ANGELS",
+            "length": "03:55"
+        },
+        {
+            "display_name": "HINDSIGHT",
+            "featuring": {
+                "display_name": "Sparrow",
+                "href": ""
+            },
+            "length": "03:04"
+        },
+        {
+            "display_name": "SORRYAU",
+            "length": "03:42"
+        },
+        {
+            "display_name": "TRANCEGRESSION",
+            "length": "03:42"
+        },
+        {
+            "display_name": "SORRYAU",
+            "length": "02:33"
+        },
+        {
+            "display_name": "THELIFTINGHAND",
+            "length": "06:31"
+        }
+    ],
+    "streaming_links": []
+}

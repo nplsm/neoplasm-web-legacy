@@ -1,20 +1,24 @@
 {% extends "base.html.jinja2" %}
 
-{% block title %}{{ name }}{% endblock title%}
+{% block title %}{{ display_name }}{% endblock title%}
 
 {% block main %}
 <main>
 
     <div class="flex">
 
-        <div><img src="{{ static(poster) }}"></div>
+        <div><img src="{{ image_path }}"></div>
 
         <div>
-            <h2><time datetime="{{ date.strftime('%Y-%m-%d') }}">{{ date.strftime('%d %b %Y') }}<time><br>{{ name }}<br><a id="location" href="{{ location.href }}" target="_blank">@{{ location.name }} ({{ location.city }})</a></h2>
+            <h2>
+                <time datetime="{{ date.strftime('%Y-%m-%d') }}">{{ date.strftime('%d %b %Y') }}<time><br>
+                {{ display_name }}<br>
+                <a id="location" href="{{ location.href }}" target="_blank">@{{ location.display_name }} ({{ location.city }})</a>
+            </h2>
 
             <ol class="lineup">
                 {% for artist in lineup %}
-                    <li>{{ artist}}</li>
+                    <li>{{ artist }}</li>
                 {% endfor %}
             </ol>
             {% if past == false and soldout == false%}
@@ -25,7 +29,7 @@
 
             <ul class="social">
                 {% for link in links %}
-                    <li><a href="{{ link.href }}" target="_blank">{{ link.name }}</a></li>
+                    <li><a href="{{ link.href }}" target="_blank">{{ link.display_name }}</a></li>
                 {% endfor %}
             </ul>
 

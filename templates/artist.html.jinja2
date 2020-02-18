@@ -1,20 +1,20 @@
 {% extends "base.html.jinja2" %}
 
-{% block title %}{{ name }} — NEOPLASM{% endblock title%}
+{% block title %}{{ display_name }} — NEOPLASM{% endblock title%}
 
 {% block main %}
 <main>
 
     <div class="flex">
 
-        <div><img src="{{ static(image) }}"></div>
+        <div><img src="{{ image_path }}"></div>
 
         <div>
-            <h2>{{ name }}</h2>
+            <h2>{{ display_name }}</h2>
             
             <ul class="social">
-                {% for link in links %}
-                    <li><a href="{{ link.href }}" target="_blank">{{ link.name }}</a></li>
+                {% for link in social_links %}
+                    <li><a href="{{ link.href }}" target="_blank">{{ link.display_name }}</a></li>
                 {% endfor %}
             </ul>
         </div>
