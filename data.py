@@ -227,7 +227,8 @@ hdmirror2020_event = {
 
 artists_list = [marblebust_artist, perfecthuman_artist, ourv_artist, ]
 releases_list = [lifeoxetine_release, omega_release, auk_release, ]
-events_list = [eartheater2019_event, hdmirror2020_event, ] 
+events_list = [eartheater2019_event, hdmirror2020_event, ]
+items_list = ['pipi', 'popo']
 
 for release in releases_list:
     route = release['route']
