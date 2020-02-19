@@ -61,7 +61,7 @@ lifeoxetine_links = [
 auk_links = [
     {'name': 'Apple Music', 'href': 'https://music.apple.com/ru/album/a-u-k/1498059256?l=en'},
     {'name': 'Boom', 'href': 'https://vk.cc/akEskF'},
-    # {'name': 'Spotify', 'href': '#'},
+    {'name': 'Spotify', 'href': 'https://open.spotify.com/album/2SW7gwDQecDx5ZTpP0fzFa?si=PbAVYBBgTOqP4bOTpJoTpg'},
     {'name': 'Bandcamp', 'href': 'https://ourdotv.bandcamp.com/album/a-u-k'},
     {'name': 'Soundcloud', 'href': 'https://soundcloud.com/ne-sm/sets/a-u-k'},
     {'name': 'Deezer', 'href': 'https://www.deezer.com/us/album/130533372'},
