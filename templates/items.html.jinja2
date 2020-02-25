@@ -1,0 +1,16 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Items — NEOPLASM{% endblock title%}
+
+{% block main %}
+<ul class="list">
+    {% for item in items %}
+    <li>
+        <a href="items/{{ item.link }}">
+            <img src="{{ item.image_path }}" alt="{{ item.display_name }} item image">
+            {{ item.display_name }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock main %}

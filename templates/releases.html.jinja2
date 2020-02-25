@@ -1,14 +1,16 @@
-{% extends "base.html.jinja2" %}
+{% extends "base.jinja2" %}
 
 {% block title %}Releases — NEOPLASM{% endblock title%}
 
 {% block main %}
-<main class="list">
+<ul class="list">
     {% for release in releases %}
-        <section>
-            <a href="releases/{{ release.route }}"><img src="{{ static(release.cover) }}"></a>
-            <a href="releases/{{ release.route }}"><h2>{{ release.artist.name }} — {{ release.name }}<h2></a>
-        </section>
+    <li>
+        <a href="releases/{{ release.link }}">
+            <img src="{{ release.image_path }}" alt="{{ release.display_name }} album cover">
+            {{ release.display_name }} — {{ release.artist.display_name }}
+        </a>
+    </li>
     {% endfor %}
-</main>
+</ul>
 {% endblock main %}

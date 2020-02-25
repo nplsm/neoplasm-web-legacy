@@ -1,0 +1,19 @@
+{
+    "display_name": "Perfect Human",
+    "id": 1,
+    "social_links": [
+        {
+            "display_name": "Facebook", 
+            "href": "https://www.facebook.com/perfecthumanmusic/"
+        }, {
+            "display_name": "VK", 
+            "href": "https://vk.com/perfect.human"
+        }, {
+            "display_name": "Telegram", 
+            "href": "https://tele.click/perfect_human"
+        }, {
+            "display_name": "Bandcamp", 
+            "href": "http://perfecthuman.bandcamp.com"
+        }
+    ]
+}

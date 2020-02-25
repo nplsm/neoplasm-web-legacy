@@ -1,0 +1,90 @@
+{
+    "display_name": "A U K",
+    "id": 3,
+    "artist": "our-v",
+    "date": "2020-02-11",
+    "tracklist": [
+        {
+            "display_name": "Wait for me here, I'll be right there",
+            "length": "02:14"
+        },
+        {
+            "display_name": "Backstage",
+            "length": "03:46"
+        },
+        {
+            "display_name": "Ice Cream",
+            "featuring": {
+                "display_name": "Jessie",
+                "href": ""
+            },
+            "length": "03:09"
+        },
+        {
+            "display_name": "League",
+            "length": "01:57"
+        },
+        {
+            "display_name": "Do not leave me",
+            "length": "01:25"
+        },
+        {
+            "display_name": "Justified Misunderstanding",
+            "length": "02:40"
+        },
+        {
+            "display_name": "Soft Forms",
+            "length": "04:05"
+        },
+        {
+            "display_name": "Invenire Tentant",
+            "length": "01:25"
+        },
+        {
+            "display_name": "A U 0K& What\"s wrong with you...",
+            "length": "04:20"
+        }
+    ],
+    "streaming_links": [
+        {
+            "display_name": "Apple Music",
+            "href": "https://music.apple.com/ru/album/a-u-k/1498059256?l=en"
+        },
+        {
+            "display_name": "Boom",
+            "href": "https://vk.cc/akEskF"
+        },
+        {
+            "display_name": "Spotify",
+            "href": "https://open.spotify.com/album/2SW7gwDQecDx5ZTpP0fzFa?si=PbAVYBBgTOqP4bOTpJoTpg"
+        },
+        {
+            "display_name": "Bandcamp",
+            "href": "https://ourdotv.bandcamp.com/album/a-u-k"
+        },
+        {
+            "display_name": "Soundcloud",
+            "href": "https://soundcloud.com/ne-sm/sets/a-u-k"
+        },
+        {
+            "display_name": "Deezer",
+            "href": "https://www.deezer.com/us/album/130533372"
+        },
+        {
+            "display_name": "YouTube Music",
+            "href": "https://music.youtube.com/playlist?list=OLAK5uy_mgIGKIVrDsWftvskU91wFmsaGRfzQP29Y"
+        },
+        {
+            "display_name": "Yandex Music",
+            "href": "https://music.yandex.ru/artist/5480823"
+        },
+        {
+            "display_name": "Pandora",
+            "href": "https://pandora.app.link/v6fWY8ZA23"
+        },
+        {
+            "display_name": "Google Play",
+            "href": "https://play.google.com/store/music/album/Our_v_A_U_K?id=Bllz54kie7ybyr5vodvomcwumy4"
+        }
+    ]
+}

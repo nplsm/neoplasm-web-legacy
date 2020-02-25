@@ -1,41 +1,39 @@
-{% extends "base.html.jinja2" %}
+{% extends "base.jinja2" %}
 
-{% block title %}{{ name }}{% endblock title%}
+{% block title %}{{ display_name }}{% endblock title%}
 
 {% block main %}
-<main>
 
-    <div class="flex">
-
-        <div><img src="{{ static(poster) }}"></div>
-
-        <div>
-            <h2><time datetime="{{ date.strftime('%Y-%m-%d') }}">{{ date.strftime('%d %b %Y') }}<time><br>{{ name }}<br><a id="location" href="{{ location.href }}" target="_blank">@{{ location.name }} ({{ location.city }})</a></h2>
-
-            <ol class="lineup">
-                {% for artist in lineup %}
-                    <li>{{ artist}}</li>
-                {% endfor %}
-            </ol>
-            {% if past == false and soldout == false%}
-            <h2><a href="{{ tickets_href }}" target="_blank">Buy Tickets...</a></h2>
-            {% elif past == false and soldout == true %}
-            <h2><a href="{{ tickets_href }}" target="_blank">Sold out.</a></h2>
-            {% endif %}
-
-            <ul class="social">
-                {% for link in links %}
-                    <li><a href="{{ link.href }}" target="_blank">{{ link.name }}</a></li>
-                {% endfor %}
-            </ul>
-
-        </div>
-        
+<div class="meta">
+    <img src="{{ image_path }}" alt="event poster">
+    <div>
+        <h1>{{ display_name }}</h1>
+        <p class="meta">
+            <time datetime="{{ date.strftime('%Y-%m-%d') }}">
+                {{ date.strftime('%d %b %Y') }}
+            <time>
+            <br><a href="{{ location.href }}" target="_blank" rel="noopener noreferrer">
+                @{{ location.display_name }} ({{ location.city }})
+            </a>
+        <p>
+        <ol class="lineup">
+            {% for artist in lineup %}
+            <li>{{ artist }}</li>
+            {% endfor %}
+        </ol>
+        {% if past == false and soldout == false%}
+        <p><a class="store" href="{{ tickets_href }}" target="_blank" rel="noopener noreferrer">Buy Tickets...</a></p>
+        {% elif past == false and soldout == true %}
+        <p><a class="store" href="{{ tickets_href }}" target="_blank" rel="noopener noreferrer">Sold out.</a></p>
+        {% endif %}
+        <ul class="social">
+            {% for link in links %}
+            <li><a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">
+                {{ link.display_name }}
+            </a></li>
+            {% endfor %}
+        </ul>
     </div>
-
-    <article>
-        {{ description|safe }}
-    </article>
-
-</main>
+</div>
+{{ description|safe }}
 {% endblock main %}

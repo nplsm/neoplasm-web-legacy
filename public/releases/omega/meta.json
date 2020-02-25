@@ -1,0 +1,58 @@
+{
+    "display_name": "Omega",
+    "id": 1,
+    "artist": "perfect-human",
+    "date": "2019-09-10",
+    "tracklist": [
+        {
+            "display_name": "Omega",
+            "featuring": {
+                "display_name": "Marble Bust",
+                "href": "/artists/marble-bust"
+            },
+            "length": "03:42"
+        }
+    ],
+    "streaming_links": [
+        {
+            "display_name": "Apple Music",
+            "href": "https://music.apple.com/us/album/omega-feat-marble-bust-single/1497301767"
+        },
+        {
+            "display_name": "Boom",
+            "href": "https://vk.cc/ajbQyb"
+        },
+        {
+            "display_name": "Spotify",
+            "href": "https://open.spotify.com/album/11IfzV6wZxLslVsq2uh4gk?si=CXAho1f4QNCspqS22ZLguQ"
+        },
+        {
+            "display_name": "Bandcamp",
+            "href": "https://perfecthuman.bandcamp.com/track/omega"
+        },
+        {
+            "display_name": "Soundcloud",
+            "href": "https://soundcloud.com/ne-sm/omega"
+        },
+        {
+            "display_name": "Deezer",
+            "href": "https://www.deezer.com/us/album/129654552"
+        },
+        {
+            "display_name": "YouTube Music",
+            "href": "https://music.youtube.com/playlist?list=OLAK5uy_nUO6DeeL51H6bl7P-HiIPoGOfsjYHfM5E"
+        },
+        {
+            "display_name": "Yandex Music",
+            "href": "https://music.yandex.ru/artist/6740953"
+        },
+        {
+            "display_name": "Pandora",
+            "href": "https://pandora.app.link/mkJ9E1SEZ3"
+        },
+        {
+            "display_name": "Google Play",
+            "href": "https://play.google.com/store/music/album/Perfect_Human_Feat_Marble_Bust_Omega?id=Bowi6dy74doa3ghw3gqb225dlci"
+        }
+    ]
+}

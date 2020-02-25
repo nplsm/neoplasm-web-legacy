@@ -1,12 +1,17 @@
-{% extends "base.html.jinja2" %}
+{% extends "base.jinja2" %}
 
 {% block title %}About — NEOPLASM{% endblock title%}
 
 {% block main %}
-<main>
-    <article>
-        {{ about|safe }}
-    </article>
-
+{{ about|safe }}
+<ul class="social">
+    <li><a href="https://www.facebook.com/nplsm/" target="_blank">Facebook</a></li>
+    <li><a href="https://www.instagram.com/neoplasm.label/" target="_blank">Instagram</a></li>
+    <li><a href="https://vk.com/ne__sm" target="_blank">VK</a></li>
+    <li><a href="https://tele.click/ne_sm_gg" target="_blank">Telegram</a></li>
+    <li><a href="https://ne-sm.bandcamp.com" target="_blank">Bandcamp</a></li>
+    <li><a href="https://soundcloud.com/ne-sm" target="_blank">Soundcloud</a></li>
+    <li><a href="mailto: nplsm@protonmail.com?">Email</a></li>
+</ul>
 </main>
 {% endblock main %}

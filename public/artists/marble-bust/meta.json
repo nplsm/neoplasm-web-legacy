@@ -1,0 +1,22 @@
+{
+    "display_name": "Marble Bust",
+    "id": 2,
+    "social_links": [
+        {
+            "display_name": "Facebook", 
+            "href": "https://www.facebook.com/marb1ebust"
+        }, {
+            "display_name": "VK", 
+            "href": "https://vk.com/marblebust"
+        }, {
+            "display_name": "Telegram", 
+            "href": "https://tele.click/lovvlife"
+        }, {
+            "display_name": "Bandcamp", 
+            "href": "https://lovvlifer.bandcamp.com"
+        }, {
+            "display_name": "Soundcloud", 
+            "href": "https://soundcloud.com/djmarblebust"
+        }
+    ]
+}

@@ -1,1 +1,0 @@
-Perfect Human — my exemplary artist, since I aim at perfection as well.

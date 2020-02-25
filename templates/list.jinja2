@@ -1,0 +1,14 @@
+{% extends "base.jinja2" %}
+
+{% block main %}
+<ul class="list">
+    {% for artist in artists %}
+    <li>
+        <a href="{% block href %}{% endblock href %}">
+            {% block image %}{% endblock image %}
+            {% block name %}{% endblock name %}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock main %}
