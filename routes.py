@@ -1,7 +1,7 @@
 from views.artists import artist, artists
 from views.events import event, events
 from views.general import about, index
-from views.items import (get_release, get_stems, item, items,
+from views.items import (get_file, item, items,
                          legacy_lifeoxetine_item_redirect, page, registration)
 from views.releases import release, releases
 
@@ -25,21 +25,18 @@ def setup_routes(app):
     app.router.add_get('/items/{item}', item, name='item')
 
     app.router.add_get(
-        r'/items/{item}/{number:\d+}',
-        page, name='registered_item'
-    )
-    app.router.add_get(
-        r'/items/{item}/{uuid:\[0-9a-fA-F]{32}}',
+        r'/items/{item}/{uuid:\b[0-9a-fA-F]{32}\b}',
         registration, name='unregistered_item'
     )
 
     app.router.add_get(
-        r'/items/{item}/{uuid:\[0-9a-fA-F]{32}}/get-release',
-        get_release, name='get_release'
+        r'/items/{item}/{uuid:\b[0-9a-fA-F]{32}\b}/{filename}',
+        get_file, name='get_file'
     )
+
     app.router.add_get(
-        r'/items/{item}/{uuid:\[0-9a-fA-F]{32}}/get-stems',
-        get_stems, name='get_stems'
+        r'/items/{item}/{number:\d+}',
+        page, name='registered_item'
     )
 
     app.router.add_get(

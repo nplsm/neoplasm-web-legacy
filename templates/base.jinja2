@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {# 
+       TODO:
+       -page description
+       -page keywords
+       -canonical  
+    #}
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/public/style.css" media="screen">
+    <title>{% block title %}NEOPLASM{% endblock title %}</title>
+    {% endblock head %}
+</head>
+
+<body>
+    <header>
+        {% block header %}
+        <a class="logo">neoplasm</a>
+        <nav>
+            <li><a href="/artists">Artists</a></li>
+            <li><a href="/releases">Releases</a></li>
+            <li><a href="/items">Items</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/about">About</a></li>
+        </nav>
+        {% endblock header %}
+    </header>
+    <hr>
+    <main>
+        {% block main %}
+        
+        {% endblock main %}
+    </main>
+    <hr>
+    <footer>
+        {% block footer %}
+        <p>
+            Website is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+            Creative Commons Attribution 4.0 International License </a>. NEOPLASM©<time datetime="2020">2020</time>
+        </p>
+        {% endblock footer %}
+    </footer>
+</body>
+
+</html>

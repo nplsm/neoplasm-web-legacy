@@ -1,29 +1,20 @@
-{% extends "base.html.jinja2" %}
+{% extends "base.jinja2" %}
 
 {% block title %}{{ display_name }} — NEOPLASM{% endblock title%}
 
 {% block main %}
-<main>
-
-    <div class="flex">
-
-        <div><img src="{{ image_path }}"></div>
-
-        <div>
-            <h2>{{ display_name }}</h2>
-            
-            <ul class="social">
-                {% for link in social_links %}
-                    <li><a href="{{ link.href }}" target="_blank">{{ link.display_name }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        
+<div class="meta">
+    <img src="{{ image_path }}" alt="artist image">
+    <div>
+        <h1>{{ display_name }}</h1>
+        <ul class="social">
+            {% for link in social_links %}
+            <li><a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">
+                {{ link.display_name }}
+            </a></li>
+            {% endfor %}
+        </ul>
     </div>
-
-    <article>
-        {{ description|safe }}
-    </article>
-
-</main>
+</div>
+{{ description|safe }}
 {% endblock main %}

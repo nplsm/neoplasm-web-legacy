@@ -1,0 +1,32 @@
+{% extends "base.jinja2" %}
+
+{% block title %}{{ display_name }} — NEOPLASM{% endblock title%}
+
+{% block main %}
+<div class="meta">
+    <img src="{{ image_path }}" alt="item image">
+    <div>
+        <h1><a href="/releases/{{ release.link }}">{{ display_name }}</a> — <a href="/artists/{{ release.artist.link }}">{{ release.artist.display_name }}</a></h1>
+        <p class="meta">Physical release</p>
+        {% if uuid %}
+        <p>
+            Your uuid is: 
+            <br>{{ uuid }}
+        </p>
+        <p>
+            <a class="store" href="/{{ stems }}">
+                Download STEMS...
+            </a>
+        </p>
+        <p>
+            <a class="store" href="tg://resolve?domain=neoplasmbot&start={{ secret }}" rel="noopener noreferrer">
+                Register your item...
+            </a>
+        </p>
+        {% else %}
+        <a class="store" href="{{ buy_href }}" target="_blank" rel="noopener noreferrer">Buy Item...</a>
+        {% endif %}
+    </div>
+</div>
+{{ description|safe }}
+{% endblock main %}

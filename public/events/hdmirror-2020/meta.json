@@ -18,15 +18,15 @@
     ],
     "links": [
         {
-            "name": "Resident Advisor",
+            "display_name": "Resident Advisor",
             "href": "https://www.residentadvisor.net/events/1380297"
         },
         {
-            "name": "Facebook",
+            "display_name": "Facebook",
             "href": "https://www.facebook.com/events/637503077020666/"
         },
         {
-            "name": "VK",
+            "display_name": "VK",
             "href": "https://vk.com/hdmirrorneoplasm"
         }
     ]

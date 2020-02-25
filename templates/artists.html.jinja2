@@ -1,16 +1,16 @@
-{% extends "base.html.jinja2" %}
+{% extends "base.jinja2" %}
 
 {% block title %}Artists — NEOPLASM{% endblock title%}
 
 {% block main %}
-<main class="list">
-
+<ul class="list">
     {% for artist in artists %}
-        <section>
-            <a href="artists/{{ artist.link }}"><img src="{{ artist.image_path }}"></a>
-            <a href="artists/{{ artist.link }}"><h2>{{ artist.display_name }}<h2></a>
-        </section>
+    <li>
+        <a href="artists/{{ artist.link }}">
+            <img src="{{ artist.image_path }}" alt="{{ artist.display_name }} image">
+            {{ artist.display_name }}
+        </a>
+    </li>
     {% endfor %}
-
-</main>    
+</ul>
 {% endblock main %}

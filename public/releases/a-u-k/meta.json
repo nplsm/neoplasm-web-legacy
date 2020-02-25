@@ -5,7 +5,7 @@
     "date": "2020-02-11",
     "tracklist": [
         {
-            "display_name": "Wait for me here, I\"ll be right there",
+            "display_name": "Wait for me here, I'll be right there",
             "length": "02:14"
         },
         {
@@ -53,6 +53,10 @@
         {
             "display_name": "Boom",
             "href": "https://vk.cc/akEskF"
+        },
+        {
+            "display_name": "Spotify",
+            "href": "https://open.spotify.com/album/2SW7gwDQecDx5ZTpP0fzFa?si=PbAVYBBgTOqP4bOTpJoTpg"
         },
         {
             "display_name": "Bandcamp",

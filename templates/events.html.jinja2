@@ -1,16 +1,16 @@
-{% extends "base.html.jinja2" %}
+{% extends "base.jinja2" %}
 
 {% block title %}Events — NEOPLASM{% endblock title%}
 
 {% block main %}
-<main class="list">
-
+<ul class="list">
     {% for event in events %}
-        <section>
-            <a href="events/{{ event.link }}"><img src="{{ event.image_path }}"></a>
-            <a href="events/{{ event.link }}"><h2>{{ event.display_name }}<br><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d %b %Y') }}</time><h2></a>
-        </section>
+    <li>
+        <a href="events/{{ event.link }}">
+            <img src="{{ event.image_path }}" alt="{{ event.display_name }} poster">
+            {{ event.display_name }}<br><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d %b %Y') }}</time>
+        </a>
+    </li>
     {% endfor %}
-
-</main>    
+</ul>
 {% endblock main %}
