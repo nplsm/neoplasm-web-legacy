@@ -5,6 +5,7 @@ Each physical embodiment of the release of NEOPLASM becomes not just a carrier o
 3. Access to a private chat in Telegram with label team.
 
 In this chat one can:
+
 - Communicate with other users who have purchased a physical copy.
 - Receive promo codes for events.
 - Ask questions directly to residents.
