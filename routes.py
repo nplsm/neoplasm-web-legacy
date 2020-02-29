@@ -2,7 +2,7 @@ from views.artists import artist, artists
 from views.events import event, events
 from views.general import about, index
 from views.items import (get_file, item, items,
-                         legacy_lifeoxetine_item_redirect, page, registration)
+                         legacy_lifeoxetine_item_redirect, registration)
 from views.releases import release, releases
 
 
@@ -34,10 +34,10 @@ def setup_routes(app):
         get_file, name='get_file'
     )
 
-    app.router.add_get(
-        r'/items/{item}/{number:\d+}',
-        page, name='registered_item'
-    )
+    # app.router.add_get(
+    #     r'/items/{item}/{number:\d+}',
+    #     page, name='registered_item'
+    # )
 
     app.router.add_get(
         '/npl0002',
