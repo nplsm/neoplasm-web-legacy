@@ -1,7 +1,7 @@
 {
     "display_name": "HDMIRROR x NEOPLASM",
     "date": "2020-02-29",
-    "past": false,
+    "past": true,
     "soldout": false,
     "tickets_href": "https://neoplasm.timepad.ru/event/1235549/",
     "location": {
