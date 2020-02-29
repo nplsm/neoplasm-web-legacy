@@ -103,7 +103,7 @@ async def legacy_lifeoxetine_item_redirect(request: web.Request):
     if 'id' in query:
         uuid = query['id']
         location = request.app.router['unregistered_item'].url_for(
-            name='lifeoxetine', uuid=uuid
+            item='lifeoxetine', uuid=uuid
         )
         return web.HTTPFound(location)
     else:
