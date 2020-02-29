@@ -1,8 +1,9 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation
-ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit
-esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.
+A physical copy of the Marble Bust album, Lifeoxetine, is a MiniDisc with an NFC-chip, which gives access to additional Neoplasm content and automatically adds the user to a closed community.
+
+After scanning the NFC-tag, you get:
+1. Archive with stems of all compositions from the Lifeoxetine for your remixes.
+2. Access to my closed community on Telergram. There you are able to:
+- Communicate with other users who bought this physical copy.
+- Receive promotional codes for Neoplasm events.
+- Communicate with Neoplasm residents directly.
+- Receive extra digital items. 
