@@ -59,15 +59,16 @@ async def registration(request: web.Request):
         if await redis.sismember(f'{item}-item:uuids', uuid):
             meta['pipi'] = 'pipi'
             meta['uuid'] = uuid
+            meta['digital_release'] = ITEM_DIR / f'{item}.zip'
             meta['stems'] = ITEM_DIR / f'{item}_stems.zip'
-            if not await redis.sismember(f'{item}-item:activated-uuids', uuid):
-                secret = secrets.token_urlsafe(8)
-                await redis.hmset_dict(secret,
-                        item=item,
-                        uuid=uuid,
-                    )
-                await redis.expire(secret, 500)
-                meta['secret'] = secret
+            # if not await redis.sismember(f'{item}-item:activated-uuids', uuid):
+            secret = secrets.token_urlsafe(8)
+            await redis.hmset_dict(secret,
+                    item=item,
+                    uuid=uuid,
+                )
+            await redis.expire(secret, 500)
+            meta['secret'] = secret
             response = meta
         else:
             meta['pipi'] = 'popo'
