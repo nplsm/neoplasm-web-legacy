@@ -1,0 +1,30 @@
+{
+    "display_name": "Sega Bodega x NEOPLASM",
+    "date": "2020-04-25",
+    "past": true,
+    "soldout": false,
+    "tickets_href": "#",
+    "location": {
+        "display_name": "Venue TBA",
+        "city": "Moscow",
+        "href": "#"
+    },
+    "lineup": [
+        "Sega Bodega",
+        "TBA"
+    ],
+    "links": [
+        {
+            "display_name": "Resident Advisor",
+            "href": "#"
+        },
+        {
+            "display_name": "Facebook",
+            "href": "https://www.facebook.com/events/1084347261916737/"
+        },
+        {
+            "display_name": "VK",
+            "href": "https://vk.com/segabodeganeoplasm"
+        }
+    ]
+}
