@@ -21,10 +21,14 @@
             <li>{{ artist }}</li>
             {% endfor %}
         </ol>
-        {% if past == false and soldout == false%}
-        <p><a class="store" href="{{ tickets_href }}" target="_blank" rel="noopener noreferrer">Buy Tickets...</a></p>
-        {% elif past == false and soldout == true %}
+        {% if ticketsSoon %}
+        <p class="store">Tickets avaliable soon.</p>
+        {% elif past %}
+        {% elif soldout %}
         <p><a class="store" href="{{ tickets_href }}" target="_blank" rel="noopener noreferrer">Sold out.</a></p>
+        {% elif past == false and soldout == true %}
+        {% elif tickets_href %}
+        <p><a class="store" href="{{ tickets_href }}" target="_blank" rel="noopener noreferrer">Buy Tickets...</a></p>
         {% endif %}
         <ul class="social">
             {% for link in links %}

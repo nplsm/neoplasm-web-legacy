@@ -145,7 +145,7 @@ p.meta>a {
     color: rgba(0, 0, 0, 0.5);
 }
 
-a.store {
+.store {
     font-size: x-large;
     font-weight: 400;
 }
