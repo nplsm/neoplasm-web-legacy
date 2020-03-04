@@ -6,8 +6,7 @@
     "tickets_href": "#",
     "location": {
         "display_name": "Venue TBA",
-        "city": "Moscow",
-        "href": "#"
+        "city": "Moscow"
     },
     "lineup": [
         "Sega Bodega",
@@ -15,8 +14,7 @@
     ],
     "links": [
         {
-            "display_name": "Resident Advisor",
-            "href": "#"
+            "display_name": "Resident Advisor"
         },
         {
             "display_name": "Facebook",
