@@ -9,9 +9,13 @@
     <div>
         <h1>{{ display_name }}</h1>
         <p class="meta">
-            <time datetime="{{ date.strftime('%Y-%m-%d') }}">
-                {{ date.strftime('%d %b %Y') }}
-            <time>
+            {% if postponed %}
+                <time>{{ postponed }}</time>
+            {% else %}
+                <time datetime="{{ date.strftime('%Y-%m-%d') }}">
+                    {{ date.strftime('%d %b %Y') }}
+                </time>
+            {% endif %}
             <br><a href="{{ location.href }}" target="_blank" rel="noopener noreferrer">
                 @{{ location.display_name }} ({{ location.city }})
             </a>

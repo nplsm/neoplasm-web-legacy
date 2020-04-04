@@ -4,6 +4,7 @@
     "ticketsSoon": false,
     "past": false,
     "soldout": false,
+    "postponed": "postponed to september",
     "tickets_href": "http://bit.ly/2TH9guL",
     "location": {
         "display_name": "Venue TBA",

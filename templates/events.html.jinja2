@@ -8,7 +8,11 @@
     <li>
         <a href="events/{{ event.link }}">
             <img src="{{ event.image_path }}" alt="{{ event.display_name }} poster">
-            {{ event.display_name }}<br><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d %b %Y') }}</time>
+            {% if event.postponed %}
+                {{ event.display_name }}<br><time>{{ event.postponed }}</time>
+            {% else %}
+                {{ event.display_name }}<br><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d %b %Y') }}</time>
+            {% endif %}
         </a>
     </li>
     {% endfor %}
