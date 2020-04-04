@@ -7,6 +7,7 @@ verify_ssl = true
 pylint = "*"
 autopep8 = "*"
 aiohttp-devtools = "*"
+v = {editable = true,version = "*"}
 
 [packages]
 aiohttp = "*"
@@ -21,4 +22,4 @@ uvloop = "*"
 ujson = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
