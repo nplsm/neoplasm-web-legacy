@@ -22,7 +22,12 @@
     </div>
 </div>
 {{ description|safe }}
-<p>released on <time datetime="{{ date }}">{{ date }}</time>
+{% if toBeReleased %}
+    <p>release on <time datetime="{{ date }}">{{ date }}</time>
+{% else %}
+    <p>released on <time datetime="{{ date }}">{{ date }}</time>
+{% endif %}
+
 <br>© All right reserved</p>
 <ol class="tracklist">
     {% for track in tracklist %}

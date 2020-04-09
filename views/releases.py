@@ -24,10 +24,14 @@ def load_release_meta(TARGET_DIR: Path) -> dict:
 
     total_length = timedelta(0)
     for track in meta['tracklist']:
-        track_minutes = int(track['length'].split(':')[0])
-        track_seconds = int(track['length'].split(':')[1])
-        track_length = timedelta(
-            minutes=track_minutes, seconds=track_seconds)
+        if track['length'] == None:
+            track_length = timedelta(0)
+            track['length'] = ''
+        else:
+            track_minutes = int(track['length'].split(':')[0])
+            track_seconds = int(track['length'].split(':')[1])
+            track_length = timedelta(
+                minutes=track_minutes, seconds=track_seconds)
         total_length += track_length
 
     meta['total_length'] = ':'.join(str(total_length).split(':')[1:])
