@@ -1,0 +1,3 @@
+A person often creates an internal enemy, on whom they unleash accumulated dissatisfaction with the conditions of their lives. The album TEORIYA ZAVISIMOSTI (DEPENDENCY THEORY) describes the capture of the inner world by this "enemy", their loss of control over the meanings that saturate the space of captivity, disappointment with created internal conflict, and, as a result, the peaceful "handover" of the captured territory to the original owner.
+
+This conceptual work explores how the inner world of a person becomes an "outskirts" in relation to the external "center" — a modern political and economic space that operates on the principle of exploiting the weak and unprotected.
