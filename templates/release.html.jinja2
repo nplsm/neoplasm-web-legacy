@@ -6,7 +6,7 @@
 <div class="meta">
     <img src="{{ image_path }}">
     <div>
-        <h1>{{ display_name }} — <a href="/artists/{{ artist.link }}">{{ artist.display_name }}</a></h2>
+        <h1><a href="/artists/{{ artist.link }}">{{ artist.display_name }}</a> — {{ display_name }}</h2>
         <ul class="streaming">
             {% for link in streaming_links %}
             <li><a href="{{ link.href }}" target="_blank">
@@ -28,7 +28,7 @@
     <p>released on <time datetime="{{ date }}">{{ date }}</time>
 {% endif %}
 
-<br>© All right reserved</p>
+<br>© All rights reserved</p>
 <ol class="tracklist">
     {% for track in tracklist %}
         {% if track.featuring %}

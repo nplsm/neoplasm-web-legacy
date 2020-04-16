@@ -1,7 +1,7 @@
 /* General */
 
 body {
-    max-width: 20cm;
+    max-width: 21cm;
     margin: 0 auto;
     padding: 0;
 
@@ -51,7 +51,7 @@ img {
 
 h1 {
     margin: 0;
-    font-size: x-large;
+    font-size: 1.3rem;
 }
 
 p {
