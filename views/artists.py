@@ -16,7 +16,7 @@ async def artists(request: web.Request) -> dict:
     artists = []
     for ARTIST_DIR in ARTISTS_DIR.glob('*/**'):
         artists.append(load_meta(ARTIST_DIR))
-    artists.sort(key=itemgetter('display_name'))
+    artists.sort(key=itemgetter('id'), reverse=True)
     return {'artists': artists}
 
 
