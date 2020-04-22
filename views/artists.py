@@ -28,3 +28,7 @@ async def artist(request: web.Request) -> Union[dict, web.HTTPException]:
         return load_meta(ARTIST_DIR)
     else:
         return web.HTTPBadRequest()
+
+async def auk_release_vk_redirect(request: web.Request):
+    location = request.app.router['release'].url_for(release='a-u-k')
+    return web.HTTPFound(location)

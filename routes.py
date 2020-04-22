@@ -1,4 +1,4 @@
-from views.artists import artist, artists
+from views.artists import artist, artists, auk_release_vk_redirect
 from views.events import event, events
 from views.general import about, index
 from views.items import (get_file, item, items,
@@ -42,4 +42,9 @@ def setup_routes(app):
     app.router.add_get(
         '/npl0002',
         legacy_lifeoxetine_item_redirect, name='legacy_lifeoxetine_id_item'
+    )
+
+    app.router.add_get(
+        '/a-u-k', 
+        auk_release_vk_redirect, name='auk_release_vk_redirect'
     )
