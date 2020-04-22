@@ -28,12 +28,25 @@
     ],
     "streaming_links": [
         {
+            "display_name": "Apple Music",
+            "href": "https://music.apple.com/ru/album/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-ep/1509294384"
+        },
+        {
+            "display_name": "Boom",
+            "href": "https://vk.com/artist/aaaaa_mtu4nzg4mjmynq"
+        },
+        {
             "display_name": "Bandcamp",
             "href": "https://podat.bandcamp.com/album/-"
         },
         {
             "display_name": "Soundcloud",
             "href": "https://soundcloud.com/ne-sm/aaaaa-uvazhenie-k-forme"
+        },
+        {
+            "display_name": "YouTube Music",
+            "href": "https://music.youtube.com/playlist?list=OLAK5uy_nROEelkAvL9jjwZn8G4T9ZuD2jyTMx8Zs"
         }
+        
     ]
 }
