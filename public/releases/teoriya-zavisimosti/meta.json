@@ -49,7 +49,10 @@
         {
             "display_name": "YouTube Music",
             "href": "https://music.youtube.com/playlist?list=OLAK5uy_nROEelkAvL9jjwZn8G4T9ZuD2jyTMx8Zs"
+        },
+        {
+            "display_name": "Yandex Music",
+            "href": "https://music.yandex.ru/album/10504020"
         }
-        
     ]
 }
