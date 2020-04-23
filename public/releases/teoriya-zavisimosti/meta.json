@@ -3,7 +3,6 @@
     "id": 4,
     "artist": "AAAAA",
     "date": "2020-04-23",
-    "toBeReleased": true,
     "tracklist": [
         {
             "display_name": "УВАЖЕНИЕ К ФОРМЕ",
@@ -11,19 +10,19 @@
         },
         {
             "display_name": "СБРОС ОТВЕТСТВЕННОСТИ",
-            "length": null
+            "length": "04:05"
         },
         {
             "display_name": "!!!",
-            "length": null
+            "length": "02:38"
         },
         {
             "display_name": "БЕЛЫЙ ФЛАГ",
-            "length": null
+            "length": "02:46"
         },
         {
             "display_name": "КОЛЫБЕЛЬНАЯ ДЛЯ ВРАГА",
-            "length": null
+            "length": "03:32"
         }
     ],
     "streaming_links": [
