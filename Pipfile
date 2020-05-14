@@ -8,6 +8,7 @@ pylint = "*"
 autopep8 = "*"
 aiohttp-devtools = "*"
 v = {editable = true,version = "*"}
+flake8 = "*"
 
 [packages]
 aiohttp = "*"
