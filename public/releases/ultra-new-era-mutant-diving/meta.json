@@ -3,6 +3,7 @@
     "id": 5,
     "artist": "new-sylveon",
     "date": "2020-05-28",
+    "toBeReleased": true,
     "tracklist": [
         {
             "display_name": "пилообразные ангелы",
