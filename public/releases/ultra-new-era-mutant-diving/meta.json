@@ -40,12 +40,36 @@
     ],
     "streaming_links": [
         {
+            "display_name": "Apple Music",
+            "href": "https://music.apple.com/ru/album/tekno-single/1514594692"
+        },
+        {
+            "display_name": "Boom",
+            "href": "https://boom.ru/redirect/album/10553576"
+        },
+        {
+            "display_name": "Spotify",
+            "href": "https://open.spotify.com/album/2KxsDmZWXqZyXpasjqx2M9?si=dH5n21anSvSz6fvsg0AnAg"
+        },
+        {
             "display_name": "Bandcamp",
             "href": "https://newsylveon.bandcamp.com/album/ultra-new-era-mutant-diving"
         },
         {
             "display_name": "Soundcloud",
             "href": "https://soundcloud.com/ne-sm/new-sylveon-tekno"
+        },
+        {
+            "display_name": "Deezer",
+            "href": "https://www.deezer.com/track/967873042?utm_source=deezer&utm_content=track-967873042&utm_term=378237205_1590146536&utm_medium=web"
+        },
+        {
+            "display_name": "Yandex Music",
+            "href": "https://music.yandex.ru/album/10813785"
+        },
+        {
+            "display_name": "Google Play",
+            "href": "https://play.google.com/store/music/album/New_Sylveon_tekno?id=Bhct6q54vlz7s7rvf4w6c7m4v3u&hl=en_US"
         }
     ]
 }
